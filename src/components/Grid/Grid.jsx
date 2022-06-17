@@ -8,10 +8,11 @@ import {
   ProductImage,
   ProductCategory,
   ProductPrice,
+  BuyButton,
 } from "./GridElements";
 
 const Grid = ({ products }) => {
-  console.log(products);
+  const displayedAmount = 9;
   return (
     <GridContainer>
       <GridWrapper>
@@ -19,14 +20,14 @@ const Grid = ({ products }) => {
           style={{
             fontFamily: "sans-serif",
             fontSize: "50px",
-            textAlign: "center",
+            textAlign: "center"
           }}
         >
           {" "}
           Featured Products
         </h1>
         <Gridcontent>
-          {products.map((product, index) => {
+          {products.slice(0, displayedAmount).map((product, index) => {
             return (
               <ProductContainer key={new Date() + index}>
                 <ProductCategory> {product.data.category.slug}</ProductCategory>
@@ -34,8 +35,13 @@ const Grid = ({ products }) => {
                   src={product.data.images[0].image.url}
                   alt="product picture"
                 />
-                <ProductName>{product.data.name}</ProductName>
-                <ProductPrice>${product.data.price} </ProductPrice>
+                <ProductName>
+                  {product.data.name.length < 20
+                    ? product.data.name
+                    : product.data.name.slice(0,20) + "..." }
+                </ProductName>
+                <ProductPrice>${product.data.price.toLocaleString('en') } </ProductPrice>
+                  <BuyButton> Buy Here</BuyButton>
               </ProductContainer>
             );
           })}

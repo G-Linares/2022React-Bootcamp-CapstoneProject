@@ -1,60 +1,95 @@
 import styled from "styled-components";
 
 export const GridContainer = styled.section`
-    height:100%;
-    background:#E4E4EF;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-`
+  height: 100%;
+  background: #e4e4ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 export const GridWrapper = styled.div`
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    height:auto;
-    width:70%;
-    height:100%;
-    justify-content:center;
-    
-`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 70%;
+  height: 100%;
+  justify-content: center;
+`;
 
 export const Gridcontent = styled.h1`
-    font-size:50px;
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-`
+  font-size: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+`;
 
 export const ProductContainer = styled.div`
-  width:200px;
-  height:200px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  font-family:sans-serif;
-  border: solid 1px rgba(0,0,0,0.1);
-  padding:15px;
-  background:#fff;
-`
+  font-family: sans-serif;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+  color:#fff;
+
+  &:after {
+    content: "uShop";
+    position: relative;
+    bottom: 80%;
+    font-size: 2em;
+    font-weight: Bold;
+    font-style: italic;
+    color: rgba(80, 155, 222, 0.1);
+  }
+`;
 export const ProductName = styled.p`
-    font-size:18px;
-`
+  font-size: 20px;
+  font-weight:bold;
+  position: relative;
+  top:50px;
+  left:30px;
+`;
 
 export const ProductImage = styled.img`
-    width:60px;
-    height:60px;
-`
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: relative;
+  top: 70px;
+  z-index: 1000;
+`;
 export const ProductCategory = styled.p`
-    font-size:18px;
-    color:rgba(0,0,0,0.4);
-    text-transform:uppercase;
-`
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+`;
 
 export const ProductPrice = styled.p`
-    font-size:18px;
-`
-    
+  font-size: 20px;
+  position: relative;
+  left:30px;
+  color:#B7D6F7;
+  font-weight:bold;
+  bottom:17px;
+`;
+export const BuyButton = styled.a`
+  font-size: 17px;
+  position: relative;
+  left:10px;
+  color:#D7E9FE;
+  bottom:60px;
+  padding:5px;
+  border-radius:10px;
+  cursor:pointer;
+  border: #D7E9FE 1px solid;
+`;
