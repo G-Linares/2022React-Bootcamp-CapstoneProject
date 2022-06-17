@@ -3,7 +3,7 @@ import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  background: #201E45;
+  background: #84BCF3;
   height: 80px;
   display: flex;
   justify-content: space-around;
@@ -49,7 +49,7 @@ export const SearchBar = styled.input`
   width:400px;
   height:20px;
   float: left;
-  border: 3px solid #F07B7B;
+  border: 1px solid #D7E9FE;
   padding-left: 15px;
   border-radius: 25px;
   outline: none;
@@ -77,10 +77,9 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(FaShoppingCart)`
   color: #201E45;
-  background-color:#E4E4EF;
-  width:45px;
-  padding-top:10px;
-  padding-bottom:10px;
+  background-color:#D7E9FE;
+ padding:5px;
+ margin:0;
   border-radius:10px;
-  font-size:1.2rem;
+  font-size:1.6rem;
 `;

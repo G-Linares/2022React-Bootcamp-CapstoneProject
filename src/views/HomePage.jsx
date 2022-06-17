@@ -11,13 +11,15 @@ import FeaturedBanners from "../mocks/es-mx/featured-banners.json";
 import ProdcutCategories from "../mocks/es-mx/product-categories.json";
 //importing grid mock data
 import FeaturedProducts from "../mocks/es-mx/featured-products.json"
+import HeroA from "../components/HeroA/HeroA";
 
 
 const HomePage = () => {
   return (
     <React.Fragment>
       <NavBar />
-      <Hero slides={FeaturedBanners.results}/>
+      {/* <Hero slides={FeaturedBanners.results}/> */}
+      <HeroA />
       <Slider categories={ProdcutCategories.results}/>
       <Grid products={FeaturedProducts.results} />
       <Footer />
