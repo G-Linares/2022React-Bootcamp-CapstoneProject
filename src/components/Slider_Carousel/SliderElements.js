@@ -7,6 +7,8 @@ export const SliderContainer = styled.section`
   max-height: 500px;
   position: relative;
   overflow: hidden;
+  margin-top:7rem;
+  margin-bottom:7rem;
   font-family: sans-serif;
 `;
 
@@ -30,13 +32,11 @@ export const SlideContainer = styled.div`
   align-items:center;
 `;
 export const SlideWrapper = styled.div`
-  
   widht: 100vw;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
- 
   
  &::before {
     content: "";
@@ -59,8 +59,7 @@ export const SlideWrapper = styled.div`
 `;
 
 export const SliderImage = styled.img`
-
-  width: 500px;
+  width: 90vw;
   height: 60vh;
   object-fit: cover;
 `;
@@ -72,21 +71,20 @@ export const SlideContent = styled.div`
   justify-content:center;
   flex-direction: column;
   max-width: 1600px;
-  widht: calc(100%-100px);
+  width:50%;
   color: #201e45;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(215, 233, 254,0.8);
   border-radius:10px;
   padding:15px;
   margin-left:5px;
   margin-right:5px;
   h1 {
-      font-size: 1.4rem;
-      font-weight: 400;
-      text-transform: uppercase;
-      text-shadow: 10px #fff;
-      text-align:left;
+      font-size: 1.7rem;
+      font-weight: Bold;
+      text-shadow: 10px #0645A4;
+      text-align:center;
       margin-bottom:0.8rem;
-      color:#fff;
+      color:#000;
   }
 `;
 
@@ -99,10 +97,15 @@ export const SlideDescription = styled.p`
 export const Button = styled.button`
   width: 150px;
   align-self:center;
-  background-color:#E4E4EF;
+  background-color:#2480CD;
+  color:#D7E9FE;
   border:none;
   border-radius:5px;
-  font-size:1.2rem;
+  font-size:1rem;
+  text-transform: capitalize;
+  display: flex;
+  align-items:center;
+  justify-content:center;
 `;
 
 export const SliderButtons = styled.div`

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
   SliderContainer,
   SliderWrapper,
@@ -30,6 +30,15 @@ const Slider = ({ categories }) => {
     }
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
+
+  useEffect(() => {
+    timeout.current = setTimeout(nextSlide, 4000);
+    return function () {
+      if (timeout.current) {
+        clearTimeout(timeout.current);
+      }
+    };
+  }, [current, length]);
 
 
   if (!Array.isArray(categories) || categories.length <= 0) {
