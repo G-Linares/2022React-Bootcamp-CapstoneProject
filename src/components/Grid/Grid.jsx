@@ -12,7 +12,6 @@ import {
 } from "./GridElements";
 
 const Grid = ({ products }) => {
-  const displayedAmount = 9;
   return (
     <GridContainer>
       <GridWrapper>
@@ -20,14 +19,14 @@ const Grid = ({ products }) => {
           style={{
             fontFamily: "sans-serif",
             fontSize: "50px",
-            textAlign: "center"
+            textAlign: "center",
           }}
         >
           {" "}
           Featured Products
         </h1>
         <Gridcontent>
-          {products.slice(0, displayedAmount).map((product, index) => {
+          {products.map((product, index) => {
             return (
               <ProductContainer key={new Date() + index}>
                 <ProductCategory> {product.data.category.slug}</ProductCategory>

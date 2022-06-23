@@ -13,7 +13,7 @@ export const GridWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   height: auto;
-  width: 70%;
+  width: 80%;
   height: 100%;
   justify-content: center;
 `;
@@ -41,22 +41,12 @@ export const ProductContainer = styled.div`
   border-radius: 20px;
   overflow: hidden;
   color:#fff;
-
-  &:after {
-    content: "uShop";
-    position: relative;
-    bottom: 80%;
-    font-size: 2em;
-    font-weight: Bold;
-    font-style: italic;
-    color: rgba(80, 155, 222, 0.1);
-  }
 `;
 export const ProductName = styled.p`
   font-size: 20px;
   font-weight:bold;
   position: relative;
-  top:50px;
+  top:0px;
   left:30px;
 `;
 
@@ -65,7 +55,7 @@ export const ProductImage = styled.img`
   height: 180px;
   border-radius: 50%;
   position: relative;
-  top: 70px;
+  top: 10px;
   z-index: 1000;
 `;
 export const ProductCategory = styled.p`
@@ -80,14 +70,14 @@ export const ProductPrice = styled.p`
   left:30px;
   color:#B7D6F7;
   font-weight:bold;
-  bottom:17px;
+  bottom:67px;
 `;
 export const BuyButton = styled.a`
   font-size: 17px;
   position: relative;
   left:10px;
   color:#D7E9FE;
-  bottom:60px;
+  bottom:110px;
   padding:5px;
   border-radius:10px;
   cursor:pointer;
