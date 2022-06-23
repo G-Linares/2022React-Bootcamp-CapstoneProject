@@ -7,3 +7,7 @@ body {
   box-sizing: border-box;
   background-color:rgb(230, 231, 255);
 }
+
+iframe {
+  pointer-events: none;
+}

@@ -9,6 +9,8 @@ export const Nav = styled.nav`
   justify-content: space-around;
   width:100%;
   z-index: 10;
+  position:fixed;
+  top:0;
 `;
 
 export const NavLink = styled(Link)`

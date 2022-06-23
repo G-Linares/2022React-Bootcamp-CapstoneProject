@@ -4,7 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./views/HomePage";
 import AboutUs from "./views/AboutUs";
 
-import ScrollTotop from "./utils/hooks/ScrollTotop";
+import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const { data, isLoading } = useFeaturedBanners();
@@ -13,13 +14,13 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <ScrollTotop>
-          <Routes>
-            <Route exact path="/" element={<HomePage />} />
-            <Route exact path="/info" element={<AboutUs />} />
-            <Route exact path="/products" element={<AboutUs />} />
-          </Routes>
-        </ScrollTotop>
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/info" element={<AboutUs />} />
+          <Route exact path="/products" element={<AboutUs />} />
+        </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
