@@ -18,6 +18,8 @@ import HeroA from "../components/HeroA/HeroA";
 
 
 const HomePage = () => {
+
+
   return (
     <React.Fragment>
       <NavBar />

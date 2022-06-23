@@ -40,7 +40,6 @@ const CardSlider = ({ categories }) => {
         },
       ],
   };
-  console.log(categories);
   return (
     <CardSliderContainer>
     <CardSliderWrapper>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const GridContainer = styled.section`
   height: 100%;
@@ -83,3 +84,16 @@ export const BuyButton = styled.a`
   cursor:pointer;
   border: #D7E9FE 1px solid;
 `;
+
+export const MoreButton = styled(Link)`
+  border: #000 1px solid;
+  padding: 10px;
+  border-radius:5px;
+  cursor:pointer;
+  margin-bottom:3rem;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-weight:700;
+  text-transform:none;
+  color:#000;
+`

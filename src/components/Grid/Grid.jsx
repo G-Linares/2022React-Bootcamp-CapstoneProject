@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   GridContainer,
   GridWrapper,
@@ -9,6 +10,7 @@ import {
   ProductCategory,
   ProductPrice,
   BuyButton,
+  MoreButton,
 } from "./GridElements";
 
 const Grid = ({ products }) => {
@@ -37,14 +39,19 @@ const Grid = ({ products }) => {
                 <ProductName>
                   {product.data.name.length < 20
                     ? product.data.name
-                    : product.data.name.slice(0,20) + "..." }
+                    : product.data.name.slice(0, 20) + "..."}
                 </ProductName>
-                <ProductPrice>${product.data.price.toLocaleString('en') } </ProductPrice>
-                  <BuyButton> Buy Here</BuyButton>
+                <ProductPrice>
+                  ${product.data.price.toLocaleString("en")}{" "}
+                </ProductPrice>
+                <BuyButton> Buy Here</BuyButton>
               </ProductContainer>
             );
           })}
         </Gridcontent>
+    
+          <MoreButton to="/products">View More</MoreButton>
+        
       </GridWrapper>
     </GridContainer>
   );

@@ -17,6 +17,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<HomePage />} />
             <Route exact path="/info" element={<AboutUs />} />
+            <Route exact path="/products" element={<AboutUs />} />
           </Routes>
         </ScrollTotop>
       </BrowserRouter>
