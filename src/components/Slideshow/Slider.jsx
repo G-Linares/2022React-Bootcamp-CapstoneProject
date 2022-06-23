@@ -6,7 +6,7 @@ const Slider = ({ banners }) => {
   return (
     <SlideContainer>
       <SliderWrapper>
-        <Titulo>Featured Categories</Titulo>
+        <Titulo>Featured Banners</Titulo>
         <Slideshow controles={true}>
        
           {banners.map((banners, index) => {
